@@ -1,0 +1,107 @@
+/* global csss */
+.common-color{
+  color: #ffa710;
+}
+.round-cir{
+  border-radius:50%;
+  object-fit: contain;
+}
+/* nav */
+.nav{
+  z-index: 1111 !important;
+}
+/* header css*/
+.header-input-box{
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  margin: 4rem 0;
+  border: 1px solid #ffa710;
+  color: #ffa710;
+}
+.header-input-btn{
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #ffa710;
+  color: #FFF;
+  background-color: #ffa710;
+  /* display: inline-block; */
+}
+.header-btns{
+  border: 1px solid #ffa710;
+  margin: 20px 10px;
+  color: #FFF;
+  padding: 5px 20px;
+  background-color: #ffa710;
+  outline: none;
+  /* display: inline-block; */
+}
+.active-btn{
+  background-color: #FFF;
+  color: #ffa710;
+  border: 1px solid #ffa710;
+}
+
+/* shopping card css */
+.overlay-container{
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  height: 100vh;
+  top: 0%;
+  display: none;
+  z-index: 11111;
+  /* opacity: 0; */
+  background-color: rgba(0, 0, 0, 0.212);
+  transition: all .7s ease !important;
+}
+.shopping-component{
+  position: absolute;
+  top: 0%;
+  width: 30%;
+  right: 0%;
+  opacity: 1;
+  height: 100vh;
+  background-color: #ffa710;
+  overflow-y:scroll ;
+  transition: all .7s ease !important;
+}
+.shopping-component::-webkit-scrollbar{
+  display: none;
+}
+/* card */
+.card-btns{
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  outline: none;
+ 
+}
+.card-bodys{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 30px 0 0 0;
+  height: 0%;
+  width: 100%;
+  transition: all .6s ease;
+  opacity: 0;
+  background-color:rgba(0,0,0,0.51) ;
+}
+.card:hover .card-bodys{
+  opacity: 1;
+  height: 100%;
+}
+.trash-btn{
+  border: none;
+  background-color: red;
+  color: #FFF;
+  outline: none;
+}
+@media only screen and (max-width: 1200px) {
+  .shopping-component{
+    width: 60% !important;
+  }
+
+}
